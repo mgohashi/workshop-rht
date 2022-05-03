@@ -1,0 +1,46 @@
+apiVersion: jaegertracing.io/v1
+kind: Jaeger
+metadata:
+  labels:
+    jaegertracing.io/operated-by: openshift-distributed-tracing.jaeger-operator
+  name: jaeger
+  namespace: istio-system
+spec:
+  ingress:
+    openshift:
+      sar: '{"namespace": "istio-system", "resource": "pods", "verb": "get"}'
+    security: oauth-proxy
+  storage:
+    dependencies:
+      schedule: 55 23 * * *
+    elasticsearch:
+      nodeCount: 1
+      redundancyPolicy: ZeroRedundancy
+      resources:
+        limits:
+          memory: 4Gi
+        requests:
+          cpu: 200m
+          memory: 4Gi
+      storage:
+        size: 5Gi
+    esIndexCleaner:
+      enabled: true
+      numberOfDays: 7
+      schedule: 55 23 * * *
+    esRollover:
+      schedule: 0 0 * * *
+    type: elasticsearch
+  strategy: production
+  ui:
+    options:
+      dependencies:
+        menuEnabled: false
+      menu:
+      - items:
+        - label: Documentation
+          url: https://access.redhat.com/documentation/en-us/openshift_container_platform/4.9/html/distributed_tracing/index
+        label: About
+      - anchorTarget: _self
+        label: Log Out
+        url: /oauth/sign_in
