@@ -5,8 +5,9 @@ resources:
   - istio/istio-system-ns.yml
   - istio/jaeger.yml
   - istio/basic-smcp.yml
-  - cicd-tools/argocd.yml
-  - cicd-tools/argocd-cluster-secret.yml
+  - openshift-gitops/openshift-gitops-cluster-secret.yml
   - bookinfo/bookinfo-ns.yml
+  - bookinfo/role.yml
+  - bookinfo/rolebinding.yml
   - istio/default-smmr.yml
-  - cicd-tools/bookinfo-application.yml
+  - openshift-gitops/bookinfo-application.yml
