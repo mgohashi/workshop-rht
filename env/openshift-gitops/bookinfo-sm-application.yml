@@ -9,7 +9,7 @@ spec:
     namespace: bookinfo
     server: 'https://kubernetes.default.svc'
   source:
-    path: bookinfo-sm/base
+    path: bookinfo-ns/base
     repoURL: 'https://github.com/mgohashi/workshop-rht.git'
     targetRevision: HEAD
   project: default
