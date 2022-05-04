@@ -6,5 +6,7 @@ resources:
   - istio/jaeger.yml
   - istio/basic-smcp.yml
   - cicd-tools/argocd.yml
+  - cicd-tools/argocd-cluster-secret.yml
   - bookinfo/bookinfo-ns.yml
   - istio/default-smmr.yml
+  - cicd-tools/bookinfo-application.yml
