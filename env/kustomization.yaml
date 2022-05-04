@@ -11,3 +11,4 @@ resources:
   - bookinfo/rolebinding.yml
   - istio/default-smmr.yml
   - openshift-gitops/bookinfo-application.yml
+  - openshift-gitops/bookinfo-sm-application.yml
