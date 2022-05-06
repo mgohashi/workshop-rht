@@ -5,3 +5,5 @@ resources:
   - istio-system-ns.yml
   - jaeger.yml
   - basic-smcp.yml
+  - role.yml
+  - rolebinding.yml
