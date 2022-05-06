@@ -2,9 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - istio-system-ns/istio-system-ns.yml
-  - istio-system-ns/jaeger.yml
-  - istio-system-ns/basic-smcp.yml
   - openshift-gitops-ns/openshift-gitops-cluster-secret.yml
   - bookinfo-ns/bookinfo-ns.yml
   - bookinfo-ns/role.yml
