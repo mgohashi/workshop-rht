@@ -9,7 +9,10 @@ resources:
   - bookinfo-ns/bookinfo-ns.yml
   - bookinfo-ns/role.yml
   - bookinfo-ns/rolebinding.yml
-  - test-app/test-app-ns.yml
+  - test-app-ns/test-app-ns.yml
+  - test-app-ns/role.yml
+  - test-app-ns/rolebinding.yml
   - istio-system-ns/default-smmr.yml
   - openshift-gitops-ns/bookinfo-application.yml
   - openshift-gitops-ns/bookinfo-ns-application.yml
+  - openshift-gitops-ns/hello-world-pipeline-application.yml

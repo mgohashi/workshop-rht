@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-world-pipeline
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: test-app
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: 0-hello-world/base
+    repoURL: 'https://github.com/mgohashi/workshop-rht-pipeline.git'
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
