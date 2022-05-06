@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../workshop-rht-app"
+		},
+		{
+			"path": "../workshop-rht-pipeline"
+		}
+	],
+	"settings": {}
+}
