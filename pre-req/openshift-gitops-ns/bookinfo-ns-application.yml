@@ -9,8 +9,8 @@ spec:
     namespace: bookinfo
     server: 'https://kubernetes.default.svc'
   source:
-    path: bookinfo-ns/base
-    repoURL: 'https://github.com/mgohashi/workshop-rht.git'
+    path: 0-bookinfo/ns/base
+    repoURL: 'https://github.com/mgohashi/workshop-rht-servicemesh.git'
     targetRevision: HEAD
   project: default
   syncPolicy:

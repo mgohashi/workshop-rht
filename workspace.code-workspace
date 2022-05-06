@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../workshop-rht-pipeline"
+		},
+		{
+			"path": "../workshop-rht-servicemesh"
 		}
 	],
 	"settings": {}
