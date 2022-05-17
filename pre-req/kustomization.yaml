@@ -4,7 +4,10 @@ kind: Kustomization
 resources:
   - openshift-gitops-ns/openshift-gitops-cluster-secret.yml
   - bookinfo-ns
+<<<<<<< HEAD
   - amp-ns
+=======
+>>>>>>> dbde044 (adding bookinfo)
   - istio-system-ns/default-smmr.yml
   - openshift-gitops-ns/bookinfo-application.yml
   - openshift-gitops-ns/bookinfo-ns-application.yml
