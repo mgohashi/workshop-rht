@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: openshift-gitops-ns
+  name: amp
   namespace: openshift-gitops
 spec:
   destination:
     name: ''
-    namespace: openshift-gitops
+    namespace: amp
     server: 'https://kubernetes.default.svc'
   source:
-    path: pre-req
-    repoURL: 'https://github.com/mgohashi/workshop-rht.git'
+    path: base
+    repoURL: 'https://github.com/mgohashi/workshop-rht-amp.git'
     targetRevision: amp
   project: default
   syncPolicy:
