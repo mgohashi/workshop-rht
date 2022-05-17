@@ -10,9 +10,6 @@ resources:
   - amp-ns/role.yml
   - amp-ns/rolebinding.yml
   - istio-system-ns/default-smmr.yml
-  - amp-ns/amp-ns.yml
-  - amp-ns/role.yml
-  - amp-ns/rolebinding.yml
   - openshift-gitops-ns/bookinfo-application.yml
   - openshift-gitops-ns/bookinfo-ns-application.yml
   - openshift-gitops-ns/workshop-rht-amp-application.yml
