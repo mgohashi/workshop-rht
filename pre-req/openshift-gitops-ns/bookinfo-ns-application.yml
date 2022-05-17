@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bookinfo-ns
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: bookinfo
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: 0-bookinfo/ns/base
+    repoURL: 'https://github.com/mgohashi/workshop-rht-servicemesh.git'
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

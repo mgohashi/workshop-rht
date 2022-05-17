@@ -4,3 +4,5 @@ kind: Kustomization
 resources:
   - openshift-gitops-ns/openshift-gitops-cluster-secret.yml
   - istio-system-ns/default-smmr.yml
+  - openshift-gitops-ns/bookinfo-application.yml
+  - openshift-gitops-ns/bookinfo-ns-application.yml
