@@ -3,7 +3,8 @@ kind: Kustomization
 
 resources:
   - openshift-gitops-ns/openshift-gitops-cluster-secret.yml
-  - istio-system-ns/default-smmr.yml
   - amp-ns/amp-ns.yml
   - amp-ns/role.yml
   - amp-ns/rolebinding.yml
+  - istio-system-ns/default-smmr.yml
+  - openshift-gitops-ns/workshop-rht-amp-application.yml
