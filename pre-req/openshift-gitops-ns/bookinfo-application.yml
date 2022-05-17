@@ -11,11 +11,7 @@ spec:
   source:
     path: 0-bookinfo/app/base
     repoURL: 'https://github.com/mgohashi/workshop-rht-servicemesh.git'
-<<<<<<< HEAD
-    targetRevision: amp
-=======
     targetRevision: HEAD
->>>>>>> 005058e (adding bookinfo)
   project: default
   syncPolicy:
     automated:
