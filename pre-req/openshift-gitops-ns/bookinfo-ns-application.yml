@@ -11,7 +11,7 @@ spec:
   source:
     path: 0-bookinfo/ns/base
     repoURL: 'https://github.com/mgohashi/workshop-rht-servicemesh.git'
-    targetRevision: HEAD
+    targetRevision: amp
   project: default
   syncPolicy:
     automated:
