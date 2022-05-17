@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../workshop-rht-servicemesh"
+		},
+		{
+			"path": "../workshop-rht-amp"
 		}
 	],
 	"settings": {}

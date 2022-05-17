@@ -9,9 +9,13 @@ resources:
   - test-app-ns/test-app-ns.yml
   - test-app-ns/role.yml
   - test-app-ns/rolebinding.yml
+  - amp-ns/amp-ns.yml
+  - amp-ns/role.yml
+  - amp-ns/rolebinding.yml
   - istio-system-ns/default-smmr.yml
   - openshift-gitops-ns/bookinfo-application.yml
   - openshift-gitops-ns/bookinfo-ns-application.yml
   - openshift-gitops-ns/hello-world-pipeline-application.yml
   - openshift-gitops-ns/workshop-rht-app-pipeline-application.yml
   - openshift-gitops-ns/workshop-rht-app-application.yml
+  - openshift-gitops-ns/workshop-rht-amp-application.yml
