@@ -3,9 +3,7 @@ kind: Kustomization
 
 resources:
   - openshift-gitops-ns/openshift-gitops-cluster-secret.yml
-  - bookinfo-ns/bookinfo-ns.yml
-  - bookinfo-ns/role.yml
-  - bookinfo-ns/rolebinding.yml
+  - bookinfo-ns
   - istio-system-ns/default-smmr.yml
   - openshift-gitops-ns/bookinfo-application.yml
   - openshift-gitops-ns/bookinfo-ns-application.yml
