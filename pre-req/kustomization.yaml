@@ -3,6 +3,9 @@ kind: Kustomization
 
 resources:
   - openshift-gitops-ns/openshift-gitops-cluster-secret.yml
+  - bookinfo-ns/bookinfo-ns.yml
+  - bookinfo-ns/role.yml
+  - bookinfo-ns/rolebinding.yml
   - amp-ns/amp-ns.yml
   - amp-ns/role.yml
   - amp-ns/rolebinding.yml
